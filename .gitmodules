@@ -1,0 +1,15 @@
+[submodule "src/linux"]
+	path = src/linux
+	url = https://github.com/beagleboard/linux.git
+[submodule "src/u-boot"]
+	path = src/u-boot
+	url = git://git.denx.de/u-boot.git
+[submodule "src/lvgl_demo/lvgl"]
+	path = src/lvgl_demo/lvgl
+	url = https://github.com/lvgl/lvgl.git
+[submodule "src/lvgl_demo/lv_drivers"]
+	path = src/lvgl_demo/lv_drivers
+	url = https://github.com/lvgl/lv_drivers.git
+[submodule "src/rfs"]
+	path = src/rfs
+	url = https://gitlab.apertis.org/infrastructure/apertis-image-recipes.git
