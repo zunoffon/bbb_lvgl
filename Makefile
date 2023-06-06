@@ -19,7 +19,7 @@ u-boot:
 
 linux:
 	@${BASH_CMD} "make ARCH=arm CROSS_COMPILE=${CROSS_COMPILE} -C /src_dir/$@ bb.org_defconfig"
-	@${BASH_CMD} "/src_dir/$@/scripts/config --file /src_dir/$@/.config -e INPUT_EVDEV -e HID_MULTITOUCH"
+	@${BASH_CMD} "/src_dir/$@/scripts/config --file /src_dir/$@/.config -e INPUT_EVDEV -e HID_MULTITOUCH -e USB_VIDEO_CLASS"
 	@${BASH_CMD} "make ARCH=arm CROSS_COMPILE=${CROSS_COMPILE} -j$(JOBS) -C /src_dir/$@"
 
 rfs:
